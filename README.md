@@ -1,5 +1,8 @@
 ```markdown
 ## ファイル構成と使い方
 
--**データ作成コード**: `generate_factor_dataset_v9_compact.py`
+- **データ作成コード**: `generate_factor_dataset_v9_compact.py`
  指定のパスにテストデータを作成します。モデルでパスを指定すればそのまま使用可能です。
+
+- **モデル**:
+  - `

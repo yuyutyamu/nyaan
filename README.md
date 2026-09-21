@@ -1,10 +1,19 @@
-```markdown
 ## ファイル構成と使い方
 
-- **データ作成コード**: `generate_factor_dataset_v9_compact.py`
- 指定のパスにテストデータを作成します。モデルでパスを指定すればそのまま使用可能です。
+### データ作成
+- `generate_factor_dataset_v9_compact.py`
+  - 指定したパスにテストデータを生成します。
+  - モデル側でそのパスを指定すればそのまま使用できます。
 
-- **モデル**:
-  - `model/expert_flowx_5experts_v9_compact.py` : ステージ0からステージ2までの学習。
-    ステージ０ : 専門家事前学習。
-    ステージ1 : 通常学習。
+### モデル
+- `model/expert_flowx_5experts_v9_compact.py`
+  - ステージ0〜ステージ2までの学習を行います。
+
+  | ステージ | 内容           |
+  |----------|----------------|
+  | ステージ0 | 専門家事前学習 |
+  | ステージ1 | 通常学習       |
+
+  ※実行例：
+  ```bash
+  python model/expert_flowx_5experts_v9_compact.py --stage 0 --data_path /path/to/data

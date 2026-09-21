@@ -14,6 +14,4 @@
   | ステージ0 | 専門家事前学習 |
   | ステージ1 | 通常学習       |
 
-  ※実行例：
-  ```bash
-  python model/expert_flowx_5experts_v9_compact.py --stage 0 --data_path /path/to/data
+  
